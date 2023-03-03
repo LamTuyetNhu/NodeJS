@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Update</title>
+  </head>
+  <body>
+    <form class="width-50 w3-container" action="/update-user" method="post">
+      <h2>UPDATE USER</h2>
+      <p>
+        <label>First Name</label>
+        <input
+          class="w3-input"
+          type="text"
+          name="firstName"
+          value="<%= dataUser.firstName %>"
+        />
+      </p>
+      <p>
+        <label>Last Name</label>
+        <input
+          class="w3-input"
+          type="text"
+          name="lastName"
+          value="<%= dataUser.lastName %>"
+        />
+      </p>
+      <p>
+        <label>Email</label>
+        <input
+          class="w3-input"
+          type="email"
+          name="email"
+          value="<%= dataUser.email %>"
+        />
+      </p>
+      <p>
+        <label>Address</label>
+        <input
+          class="w3-input"
+          type="text"
+          name="address"
+          value="<%= dataUser.address %>"
+        />
+      </p>
+      <input type="text" hidden value="<%= dataUser.id%>" name="id" />
+      <button class="w3-button w3-teal" type="submit">Save</button>
+    </form>
+  </body>
+</html>

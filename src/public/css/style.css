@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.width-50 {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.btn-submit {
+  margin: 15px 0;
+}
+
+.upload-file-container {
+  padding: 20px;
+}
+
+.upload-file-container label {
+  display: block;
+}
+
+.btn-detail {
+  text-decoration: none;
+  padding: 2px;
+  border: 1px solid;
+  border-radius: 3px;
+  display: block;
+}
+
+.not-found {
+  /* display: grid;
+  place-items: center; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-center {
+  margin: 15px auto;
+
+  width: 100px;
+}
+
+.input-search {
+  height: auto;
+  padding-left: 5px;
+  font-size: 16px;
+  margin: 10px 5px;
+}
